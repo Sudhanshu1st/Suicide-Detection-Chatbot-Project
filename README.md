@@ -70,8 +70,3 @@ The chatbot can be deployed in various ways, including integrating it into a web
 Feel free to explore and modify the code to enhance the chatbot's capabilities and improve its accuracy in identifying distress-related content.
 
 ---
-
-By [Your Name]
-```
-
-Please replace placeholders like `[Your Name]` with your actual name. Additionally, you can customize the content and sections of the README to match your project's structure and details. The README file serves as the documentation for your project, providing readers with an understanding of its purpose, functionality, and usage.
