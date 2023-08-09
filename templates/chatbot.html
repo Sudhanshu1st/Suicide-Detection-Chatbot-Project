@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suicide Detection Chatbot</title>
+</head>
+<body>
+    <h1>Suicide Detection Chatbot</h1>
+    <div id="chat-container">
+        <div id="chat-history"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#send-button").click(function() {
+            sendMessage();
+        });
+    });
+
+    function sendMessage() {
+        var userInput = $("#user-input").val();
+        if (userInput !== "") {
+            $("#chat-history").append(`<p>You: ${userInput}</p>`);
+            $.post("/get_response", { input: userInput }, function(data) {
+                $("#chat-history").append(`<p>Alex: ${data}</p>`);
+            });
+            $("#user-input").val("");
+        }
+    }
+</script>
+</html>
