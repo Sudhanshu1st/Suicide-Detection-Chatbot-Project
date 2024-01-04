@@ -67,6 +67,10 @@ To use the chatbot, you can execute the `start_chatbot()` function. The chatbot,
 
 The chatbot can be deployed in various ways, including integrating it into a web application or a messaging platform. You can create a simple web interface that allows users to input text and receive responses from the chatbot.
 
+## Conclusion
+
+In conclusion, this suicide detection chatbot project showcases the integration of natural language processing and machine learning to create a supportive conversational agent. By leveraging a preprocessed dataset and training various models, the chatbot aims to identify distress signs. The inclusion of the GPT-3 API enhances conversation quality. Users can deploy the chatbot in diverse contexts, like web applications, to offer empathetic support. Continuous refinement can improve the chatbot's performance, emphasizing ethical considerations for user well-being.
+
 Feel free to explore and modify the code to enhance the chatbot's capabilities and improve its accuracy in identifying distress-related content.
 
 ---
