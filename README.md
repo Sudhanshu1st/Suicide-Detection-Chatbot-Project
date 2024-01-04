@@ -61,11 +61,17 @@ A data processing pipeline is created using the `Pipeline` class from scikit-lea
 
 ## Usage
 
-To use the chatbot, you can execute the `start_chatbot()` function. The chatbot, named Alex, engages in conversations and provides responses. The GPT-3 API from OpenAI is utilized to generate responses based on user input.
+To use the chatbot, you can execute the `start_chatbot()` function. The chatbot, named Alex, engages in conversations and responds. The GPT-3 API from OpenAI is utilized to generate responses based on user input.
 
 ## Deployment
 
-The chatbot can be deployed in various ways, including integrating it into a web application or a messaging platform.To provide a user-friendly experience, you can create a simple web interface that allows users to input text and receive responses from the chatbot.
+The chatbot can be deployed in various ways, including integrating it into a web application or a messaging platform. To provide a user-friendly experience, you can create a simple web interface that allows users to input text and receive responses from the chatbot.
+
+## Contributors
+1. Anshul Kumar (https://github.com/ianshulx)
+2. Avisha Goyal (https://github.com/avishagoyal08)
+3. Janeika J (https://github.com/JaneikaJ)
+4. Sudhanshu Tiwari
 
 ## Conclusion
 
