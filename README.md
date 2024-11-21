@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the creation of a suicide detection chatbot using natural language processing techniques and a machine learning model. The chatbot is designed to provide emotional support and identify potential signs of distress in text conversations.
+The rise of social media and online communities creates safe and anonymous spaces for individuals to share their thoughts about their mental health and express their feelings and sufferings in online communities. To prevent suicide, it is necessary to detect suicide-related posts and user's suicide ideation in cyberspace by natural language processing methods. So for Microsoft Learn Student Ambassador Community Projects we built suicide detection chatbot using natural language processing techniques and a machine learning model. The chatbot is designed to provide emotional support and identify potential signs of distress in text conversations.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ This project demonstrates the creation of a suicide detection chatbot using natu
 
 ## Introduction
 
-This project aims to build a chatbot named Alex that can engage in conversations, offer empathy, and potentially detect signs of distress or emotional difficulties in text inputs. The project uses machine learning techniques to predict the likelihood of a message containing distress-related content.
+This project aims to build a chatbot named Mitra (Which means "Friend" in Hindi) that can engage in conversations, offer empathy, and potentially detect signs of distress or emotional difficulties in text inputs. The project uses machine learning techniques to predict the likelihood of a message containing distress-related content.
 
 ## Dependencies
 
@@ -41,7 +41,7 @@ Install the required dependencies using the following command:
 
 ## Dataset
 
-The project uses a dataset containing text messages that may contain distress-related content. The dataset is loaded and preprocessed using the `TextPreprocessor` class, which performs cleaning, lemmatization, and other text transformations.
+The project uses a dataset scrapped from Twitter, containing text messages that may contain distress-related content. The dataset is loaded and preprocessed using the `TextPreprocessor` class, which performs cleaning, lemmatization, and other text transformations.
 
 ## Data Preprocessing
 
@@ -53,7 +53,19 @@ The feature extraction process involves transforming the preprocessed text into 
 
 ## Predictive Models
 
-Several predictive models are trained and evaluated on the preprocessed data. These models include Multinomial Naive Bayes, Complement Naive Bayes, Logistic Regression, Linear SVC, SGDClassifier, and a Soft Voting ensemble.
+We have used several predictive models are trained and evaluated on the preprocessed data. These models include Multinomial Naive Bayes, Complement Naive Bayes, Logistic Regression, Linear SVC, SGDClassifier, and a Soft Voting ensemble. 
+
+# Model Evaluation
+
+Below is a comparison of the evaluation metrics for the four models used in the project.
+
+| **Model**                   | **Accuracy** | **Accuracy (Test)** | **Precision (Non-Suicide)** | **Recall (Non-Suicide)** | **F1-Score (Non-Suicide)** | **Precision (Suicide)** | **Recall (Suicide)** | **F1-Score (Suicide)** | **Overall Accuracy** |
+|-----------------------------|--------------|----------------------|-----------------------------|--------------------------|----------------------------|-------------------------|-----------------------|-------------------------|-----------------------|
+| Multinomial Naive Bayes     | 0.90 (+/- 0.01) | 0.85 (+/- 0.01)     | 0.93                        | 0.80                     | 0.86                       | 0.82                   | 0.94                  | 0.88                   | 0.87                  |
+| Complement Naive Bayes      | 0.90 (+/- 0.01) | 0.85 (+/- 0.01)     | 0.93                        | 0.80                     | 0.86                       | 0.82                   | 0.94                  | 0.88                   | 0.87                  |
+| Logistic Regression         | 0.92 (+/- 0.00) | 0.89 (+/- 0.01)     | 0.89                        | 0.91                     | 0.90                       | 0.90                   | 0.89                  | 0.89                   | 0.90                  |
+| Linear SVC                  | 0.90 (+/- 0.01) | 0.83 (+/- 0.01)     | 0.87                        | 0.85                     | 0.86                       | 0.85                   | 0.87                  | 0.86                   | 0.86                  |
+
 
 ## Pipeline
 
