@@ -83,7 +83,7 @@ The chatbot can be deployed in various ways, including integrating it into a web
 1. Anshul Kumar (https://github.com/ianshulx)
 2. Avisha Goyal (https://github.com/avishagoyal08)
 3. Janeika J (https://github.com/JaneikaJ)
-4. Sudhanshu Tiwari
+4. Sudhanshu Tiwari (Team Lead) 
 
 ## Conclusion
 
